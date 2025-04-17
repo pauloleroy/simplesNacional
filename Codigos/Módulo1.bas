@@ -64,7 +64,7 @@ Sub ProcessarMultiplasNotasFiscaisParaTabela()
                 End If
                 
                 ' Verifica se o CFOP é 1202 ou 5102 antes de adicionar na tabela
-                If cfop = "1202" Or cfop = "5102" Then
+                If cfop = "1202" Or cfop = "5102" Or cfop = "6102" Or cfop = "5101" Or cfop = "6101" Then
                     ' Adiciona os dados na tabela
                     Set ultimaLinha = listaTabela.ListRows.Add
                     With ultimaLinha
